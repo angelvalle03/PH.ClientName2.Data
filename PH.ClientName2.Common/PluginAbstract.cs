@@ -46,7 +46,7 @@ namespace PH.ClientName2.Common
         {
             if (!context.InputParameters.Contains(parameter))
             {
-                throw new ArgumentException("No fué posible obtener el target del contexto de ejecución.");
+                throw new ArgumentException("No se pudo obtener el target del contexto de ejecución.");
             }
             EntityReference reference = (EntityReference)context.InputParameters[parameter];
             return reference.Id;
